@@ -1,0 +1,49 @@
+.container {
+    padding-top: 80px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .imageSection {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .imageWrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .infoSection, .descriptionSection, .roleSection, .mediaSection {
+    margin-bottom: 2rem;
+  }
+  
+  .infoSection p, .descriptionSection p, .roleSection p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mediaSection ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mediaSection li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mediaSection a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .mediaSection a:hover {
+    text-decoration: underline;
+  }

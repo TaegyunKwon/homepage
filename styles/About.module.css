@@ -1,0 +1,106 @@
+.container {
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.imageContainer {
+  flex: 0 0 300px;
+}
+
+.profileImage {
+  border-radius: 0; /* 사각형 이미지로 변경 */
+}
+
+.textContent {
+  flex: 1;
+}
+
+.introduction {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.interests {
+  list-style-type: none;
+  padding: 0;
+}
+
+.interests li {
+  margin-bottom: 0.5rem;
+}
+
+.cvButton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cvButton:hover {
+  background-color: #0051bb;
+}
+
+.affiliation {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.awards {
+  list-style-type: none;
+  padding: 0;
+}
+
+.awards li {
+  margin-bottom: 1rem;
+}
+
+.awards p {
+  margin: 0.5rem 0 0 0;
+}
+
+.awards a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.awards a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageContainer {
+    margin-bottom: 2rem;
+  }
+}
