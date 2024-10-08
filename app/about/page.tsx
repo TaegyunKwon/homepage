@@ -10,7 +10,7 @@ export default function About() {
         <div className={styles.content}>
           <div className={styles.imageContainer}>
             <Image
-              src="/images/about/프로필.jpeg"
+              src="/images/about/프로필.webp"
               alt="Taegyun Kwon"
               width={400}
               height={500}

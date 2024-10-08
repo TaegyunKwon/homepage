@@ -14,25 +14,25 @@ const projects: Project[] = [
   {
     id: 'ai-feedback',
     title: 'Conversational AI Feedback System for Expressive Music Performance Learning',
-    image: '/images/projects/세종.png',
+    image: '/images/projects/세종.webp',
     period: 'May. 2024 - Present'
   },
   {
     id: 'real-time-audiovisual',
     title: 'Real-time audiovisual music information processing for interactive AI performance systems',
-    image: '/images/projects/Audiovisual.png',
+    image: '/images/projects/Audiovisual.webp',
     period: 'Mar. 2023 - Present'
   },
   {
     id: 'multi-modal-piano',
     title: 'Multi-Modal Piano Performance Data Collection and Generation',
-    image: '/images/projects/Motion.png',
+    image: '/images/projects/Motion.webp',
     period: 'Sep. 2021 - Present'
   },
   {
     id: 'expressive-music',
     title: 'Expressive music performance creation system using machine learning',
-    image: '/images/projects/vnet.png',
+    image: '/images/projects/vnet.webp',
     period: 'Jul. 2018 - May. 2021'
   },
 ];
