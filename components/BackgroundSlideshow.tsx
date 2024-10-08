@@ -7,7 +7,7 @@ const imageFiles = [
   'AAE2.webp',
   '50주년.webp',
   '신세계.webp',
-  'X-space7.webp',
+  'X-Space7.webp',
 ];
 
 export default function BackgroundSlideshow() {
