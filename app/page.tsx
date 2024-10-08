@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <BackgroundSlideshow />
-      <h1 className={styles.title}>Taegyun's Homepage</h1>
+      <h1 className={styles.title}>Taegyun&apos;s Homepage</h1>
       <p className={styles.description}>
         MIR researcher / Interdisciplinary Creator.
       </p>

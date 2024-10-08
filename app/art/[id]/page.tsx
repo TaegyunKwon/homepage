@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import { artProjectsData } from '../page';
+import { artProjects } from '../artProjectsData';
 import styles from '../../../styles/ArtProject.module.css';
 
 export default function ArtProjectDetail({ params }: { params: { id: string } }) {
-  const project = artProjectsData.find(p => p.id === params.id);
+  const project = artProjects.find(p => p.id === params.id);
 
   if (!project) {
     return <div>Project not found</div>;
@@ -106,7 +106,7 @@ export default function ArtProjectDetail({ params }: { params: { id: string } })
 }
 
 export async function generateStaticParams() {
-  return artProjectsData.map((project) => ({
+  return artProjects.map((project) => ({
     id: project.id,
   }));
 }

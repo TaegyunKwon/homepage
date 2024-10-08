@@ -23,7 +23,7 @@ export default function About() {
               Postdoctoral Researcher at the Department of Graduate School of Culture Technology, KAIST
             </p>
             <p className={styles.introduction}>
-              I'm a Postdoctoral Researcher at MACLAB, KAIST, working on MIR and AI. I'm also passionate about making Art projects with Music and AI. Amateur Pianist.
+            I&apos;m a Postdoctoral Researcher at MACLAB, KAIST, working on MIR and AI. I&apos;m also passionate about making Art projects with Music and AI. Amateur Pianist.
             </p>
             <h3>Research Interests</h3>
             <ul className={styles.interests}>
@@ -50,7 +50,7 @@ export default function About() {
               </li>
               <li>
                 <strong>KAIST NAVER Clova AI Workshop</strong> - NAVER Corp, 2019
-                <p>Best Poster: "Hierarchical RNN-based System for Modeling Expressive Piano Performance" <a href="https://ct.kaist.ac.kr/boards/view/news_board/1615/180/" target="_blank" rel="noopener noreferrer">[News]</a></p>
+                <p>Best Poster: &ldquo;Hierarchical RNN-based System for Modeling Expressive Piano Performance&ldquo; <a href="https://ct.kaist.ac.kr/boards/view/news_board/1615/180/" target="_blank" rel="noopener noreferrer">[News]</a></p>
               </li>
             </ul>
             <a href="/pdf/TGK_Resume.pdf" className={styles.cvButton} target="_blank" rel="noopener noreferrer">
