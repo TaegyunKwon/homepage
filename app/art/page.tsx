@@ -1,30 +1,31 @@
-import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../../styles/Art.module.css';
+import Link from 'next/link';
 import { artProjects } from './artProjectsData';
+import styles from '../../styles/Art.module.css';
+
+export const metadata = { title: 'Art — Taegyun Kwon' };
 
 export default function Art() {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <div className={styles.grid}>
-          {artProjects.map((project) => (
-            <Link href={`/art/${project.id}`} key={project.id} className={styles.card}>
-              <div className={styles.imageContainer}>
-                <Image src={project.images[0]} alt={project.title} layout="fill" objectFit="cover" />
-                <div className={styles.overlay}>
-                  <h3>{project.title}</h3>
-                  <p>{project.role}</p>
-                  <p>{project.date}</p>
-                  <p>{project.venue}</p>
-                  {project.shortdescription && <p>{project.shortdescription}</p>}
-                </div>
+    <main className={styles.gallery}>
+      <h1>Performances &amp; installations</h1>
+      <ul className={styles.grid}>
+        {artProjects.map((project, index) => (
+          <li key={project.id}>
+            <Link href={`/art/${project.id}`}>
+              <div className={styles.cover}>
+                <Image src={project.images[0].src} alt="" fill priority={index === 0}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 600px" />
               </div>
+              <div className={styles.caption}>
+                <h2>{project.title}</h2>
+                <time>{project.date.match(/\d{4}/)?.[0]}</time>
+              </div>
+              <p><span className={styles.srOnly}>My role: </span>{project.role}</p>
             </Link>
-          ))}
-        </div>
-      </main>
-    </div>
+          </li>
+        ))}
+      </ul>
+    </main>
   );
 }
