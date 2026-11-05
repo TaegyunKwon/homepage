@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# LaTeX intermediate files; the published PDF lives in public/pdf/
+/cv/build/
+/cv/*.aux
+/cv/*.log
+/cv/*.out
+/cv/*.synctex.gz

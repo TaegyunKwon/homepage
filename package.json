@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cv:sync": "node scripts/generate-cv-publications.mjs",
+    "cv:check": "node scripts/generate-cv-publications.mjs --check",
+    "cv:build": "bash scripts/build-cv.sh",
+    "prebuild": "npm run cv:check"
   },
   "dependencies": {
     "next": "14.2.13",

@@ -34,3 +34,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Publications and CV
+
+The website reads `data/publications.json`. The LaTeX CV in `cv/` uses a generated copy of the same publication list. See [CV build instructions](cv/README.md).
+
+```bash
+npm run cv:sync
+npm run cv:build
+npm run build
+```
+
+The website build checks that `cv/publications.tex` matches the shared data. Commit the rebuilt `public/pdf/TGK_Resume.pdf` with any CV changes.
