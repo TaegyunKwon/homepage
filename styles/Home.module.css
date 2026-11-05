@@ -1,23 +1,35 @@
-.main {
-  position: relative;
-  z-index: 1;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-}
-
-.title {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.description {
-  font-size: 2rem;
-  max-width: 800px;
-}
+.main { max-width: 1440px; margin: 0 auto; padding: 0 64px; }
+.hero { min-height: 700px; position: relative; display: flex; align-items: center; border-bottom: 1px solid #dcded7; isolation: isolate; }
+.intro { position: relative; z-index: 1; padding: 70px 0 86px; }
+.eyebrow, .sectionLabel, .number, .footer, .artCaption, .code, .marginNote { font-family: var(--font-geist-mono), monospace; }
+.eyebrow { font-size: 10px; letter-spacing: .13em; display: flex; align-items: center; gap: 10px; margin-bottom: 36px; color: #52624b; }
+.eyebrow span { width: 6px; height: 6px; background: #647b50; border-radius: 50%; }
+.title { font-size: clamp(76px, 8vw, 116px); letter-spacing: -.075em; font-weight: 450; line-height: .98; margin: 0 0 28px; }
+.period { color: #75865d; }
+.role { font-size: 23px; line-height: 1.4; letter-spacing: -.04em; margin-bottom: 20px; }
+.description { font-size: 14px; line-height: 1.85; color: #686c64; }
+.aboutLink { display: inline-flex; align-items: center; gap: 42px; font-size: 12px; margin-top: 30px; padding-bottom: 8px; border-bottom: 1px solid #a4aa9b; text-decoration: none; }
+.aboutLink:hover { color: #526c3b; border-color: currentColor; }
+.artwork { position: absolute; right: -20px; top: 75px; width: 62%; height: 530px; pointer-events: none; z-index: -1; background-image: radial-gradient(#8b97842e .7px, transparent .7px); background-size: 18px 18px; mask-image: linear-gradient(to right, transparent, black 18%, black 90%, transparent); }
+.code { position: absolute; top: 24px; left: 26%; font-size: 11px; line-height: 1.9; color: #8a9581; opacity: .72; }
+.waves { position: absolute; width: 100%; height: 100%; top: 40px; overflow: visible; }
+.waves path { stroke: #81916b; stroke-width: .65; opacity: .44; }
+.artCaption { position: absolute; bottom: 10px; right: 32px; color: #7b8375; font-size: 8px; letter-spacing: .12em; }
+.marginNote { position: absolute; bottom: 28px; right: 0; font-size: 9px; color: #7a8074; letter-spacing: .09em; }
+.directory { padding: 34px 0 48px; }
+.sectionLabel { display: flex; align-items: center; justify-content: space-between; margin-bottom: 22px; color: #71776b; font-size: 9px; letter-spacing: .08em; }
+.sectionLabel h2 { font-size: 10px; font-weight: 400; text-transform: uppercase; margin: 0; }
+.links { display: grid; grid-template-columns: 1fr 1fr; column-gap: 64px; }
+.destination { display: flex; align-items: center; gap: 22px; border-bottom: 1px solid #dcded7; padding: 22px 0; text-decoration: none; transition: color .2s; }
+.number { font-size: 10px; color: #7a8074; align-self: flex-start; padding-top: 5px; }
+.destination h3 { font-size: 20px; font-weight: 450; letter-spacing: -.04em; margin: 0 0 4px; }
+.destination p { font-size: 11px; color: #73776e; }
+.arrow { margin-left: auto; font-size: 20px; color: #707d60; transition: transform .2s; }
+.destination:hover { color: #526c3b; }
+.destination:hover .arrow { transform: translate(3px, -3px); }
+.footer { display: flex; justify-content: space-between; gap: 20px; padding: 22px 0 30px; font-size: 9px; color: #71776b; }
+.footer a { text-decoration: none; }
+@media (min-width: 1500px) { .hero { min-height: 760px; } }
+@media (max-width: 800px) { .main { padding: 0 28px; } .hero { min-height: 640px; } .artwork { right: -28px; width: 72%; opacity: .45; } .code { left: 12%; font-size: 9px; } .links { column-gap: 28px; } .destination { gap: 14px; } .destination p { max-width: 180px; } }
+@media (max-width: 540px) { .main { padding: 0 24px; } .hero { min-height: 650px; align-items: flex-start; } .intro { padding: 54px 0 130px; } .title { font-size: 84px; } .eyebrow { font-size: 8px; margin-bottom: 30px; } .role { font-size: 21px; } .description { font-size: 12px; } .artwork { width: 95%; top: 280px; right: -24px; height: 340px; opacity: .35; } .code { display: none; } .artCaption { display: none; } .links { grid-template-columns: 1fr; } .destination p { max-width: none; } .sectionLabel span { font-size: 8px; } .footer { flex-wrap: wrap; font-size: 8px; } .footer > span:nth-child(2) { display: none; } }
+@media (prefers-reduced-motion: reduce) { .destination, .arrow { transition: none; } }
