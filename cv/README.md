@@ -22,7 +22,7 @@ npm run cv:check  # fail if the generated file is out of date
 npm run cv:build  # regenerate and compile the downloadable PDF
 ```
 
-Do not edit `publications.tex` directly. Other CV sections remain hand-edited in `resume.tex`. Current roles, project end dates, and reviewer years have been retained from the supplied CV; updating publications does not verify those biographical details.
+Do not edit `publications.tex` directly. Other CV sections remain hand-edited in `resume.tex`. SORI CEO responsibilities and the KAIST departure year (2025) were supplied by the CV owner on 2026-11-05. SORI is listed as Current because its start date has not been specified. Project end dates and reviewer years remain as supplied in the original CV.
 
 ## Publication provenance
 

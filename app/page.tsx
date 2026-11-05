@@ -24,7 +24,7 @@ export default function Home() {
         <div className={styles.intro}>
           <p className={styles.eyebrow}><span /> MUSIC · TECHNOLOGY · ART</p>
           <h1 className={styles.title} id="home-title">Taegyun<br />Kwon<span className={styles.period}>.</span></h1>
-          <p className={styles.role}>MIR researcher &amp;<br />interdisciplinary creator.</p>
+          <p className={styles.role}>CEO at SORI.<br />Music AI researcher &amp; creator.</p>
           <p className={styles.description}>Exploring how we understand, perform,<br className={styles.desktopBreak} /> and create music through technology.</p>
           <Link href="/about" className={styles.aboutLink}>More about me <span aria-hidden="true">↗</span></Link>
         </div>

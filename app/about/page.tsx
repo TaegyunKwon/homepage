@@ -7,7 +7,8 @@ export const metadata: Metadata = { title: 'About — Taegyun Kwon' };
 
 const interests = ['Music information retrieval', 'Automatic music transcription & alignment', 'Expressive performance modeling', 'Human–computer interaction in performance', 'Deep learning', 'Audio signal processing'];
 const experience = [
-  { year: '2024 — Present', role: 'Postdoctoral Researcher', place: 'KAIST · Graduate School of Culture Technology', detail: 'Music performance interaction, transcription, and multimodal performance analysis.' },
+  { year: 'Current', role: 'CEO', place: 'SORI', detail: 'Leading work on music transcription, alignment, listening, and editing.' },
+  { year: '2024 — 2025', role: 'Postdoctoral Researcher', place: 'KAIST · Graduate School of Culture Technology', detail: 'Music performance interaction, transcription, and multimodal performance analysis.' },
   { year: '2023', role: 'Co-founder', place: 'AudAI', detail: 'AI co-creation tools focused on singing voice generation.' },
   { year: '2019 — 2020', role: 'Research Intern', place: 'SK Telecom · T-brain', detail: 'Music AI applications, multi-instrument transcription, and source separation.' },
   { year: '2017', role: 'Research Intern', place: 'NAVER · Clova', detail: 'AI-DJ development for the NAVER music service.' },
@@ -30,11 +31,11 @@ export default function About() {
       <p className={styles.eyebrow}>ABOUT / TAEGYUN KWON</p>
       <section className={styles.hero} aria-labelledby="about-title">
         <div className={styles.intro}>
-          <h1 id="about-title">A researcher.<br />A creator.<br />A pianist.</h1>
-          <p className={styles.lead}>I explore the connections between music, artificial intelligence, and human expression.</p>
-          <p>I&apos;m a postdoctoral researcher at KAIST&apos;s Music and Audio Computing Lab, working on music information retrieval and AI. My research looks at how machines listen to, understand, and model musical performance.</p>
-          <p>Alongside research, I create art projects with music and AI—from interactive piano performances to collaborations across sound, movement, and visuals. I&apos;m also an amateur pianist.</p>
-          <div className={styles.actions}><a href="/pdf/TGK_Resume.pdf" target="_blank" rel="noopener noreferrer">Download CV ↗</a><Link href="/art">Art &amp; performances ↗</Link></div>
+          <h1 id="about-title">A researcher.<br />A builder.<br />A pianist.</h1>
+          <p className={styles.lead}>I lead SORI, bringing music AI research into tools for listening to and working with music.</p>
+          <p>As CEO of SORI, I work across music transcription, alignment, listening, and editing. My research background is in music information retrieval and expressive performance—how machines can understand the music people make.</p>
+          <p>Previously, I was a postdoctoral researcher at KAIST&apos;s Music and Audio Computing Lab (2024–2025), following my Ph.D. in Culture Technology. I also create art projects with music and AI—from interactive piano performances to collaborations across sound, movement, and visuals. I&apos;m also an amateur pianist.</p>
+          <div className={styles.actions}><a href="/pdf/TGK_Resume.pdf" target="_blank" rel="noopener noreferrer">Download CV ↗</a><Link href="/projects#sori">My work at SORI ↗</Link></div>
         </div>
         <figure className={styles.portrait}><Image src="/images/about/프로필.webp" alt="Taegyun Kwon" width={400} height={500} priority sizes="(max-width: 700px) 80vw, 320px" /><figcaption>TAEGYUN KWON / 권태균</figcaption></figure>
       </section>
